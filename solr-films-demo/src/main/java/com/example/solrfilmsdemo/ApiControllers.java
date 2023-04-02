@@ -39,7 +39,7 @@ public class ApiControllers {
     }
 
     @PostMapping("film/add")
-    void getGenres(@RequestBody Film film) throws SolrServerException, IOException {
+    void addFilm(@RequestBody Film film) throws SolrServerException, IOException {
         solrService.addFilm(film);
     }
 }
